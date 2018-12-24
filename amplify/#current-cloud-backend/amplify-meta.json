@@ -1,0 +1,56 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "step1-20181222211409-authRole",
+			"UnauthRoleArn": "arn:aws:iam::545757968773:role/step1-20181222211409-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::545757968773:role/step1-20181222211409-authRole",
+			"Region": "ap-southeast-2",
+			"DeploymentBucketName": "step1-20181222211409-deployment",
+			"UnauthRoleName": "step1-20181222211409-unauthRole",
+			"StackName": "step1-20181222211409",
+			"StackId": "arn:aws:cloudformation:ap-southeast-2:545757968773:stack/step1-20181222211409/b479c780-05da-11e9-9879-0249d6f7bf88"
+		}
+	},
+	"api": {
+		"rnreinvent": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "p44zpzsx3bft3ogebkmzacpuki",
+				"GraphQLAPIEndpointOutput": "https://x72bi7t4ovdlterojrnechagqi.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-foe7rxtlabhfvcrfmfpcat6ebu",
+				"AuthCognitoUserPoolIdOutput": "ap-southeast-2_eJxm0SUxn",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: ap-southeast-2_eJxm0SUxn",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: ap-southeast-2_eJxm0SUxn"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/step1-20181222211409-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apirnreinvent"
+			},
+			"lastPushTimeStamp": "2018-12-23T00:05:21.599Z",
+			"lastPushDirHash": "k5Pc7Koe4f9GI5k6Za73RuY9QFc="
+		}
+	},
+	"auth": {
+		"cognitoa8a43d01": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/step1-20181222211409-deployment/amplify-cfn-templates/auth/cognitoa8a43d01-cloudformation-template.yml",
+				"logicalId": "authcognitoa8a43d01"
+			},
+			"lastPushTimeStamp": "2018-12-23T00:05:21.599Z",
+			"output": {
+				"AppClientSecret": "vag2n2n2svfs8q9pmr3r1tde3tefqj98giq02n76h76noj7ol01",
+				"UserPoolId": "ap-southeast-2_eJxm0SUxn",
+				"AppClientIDWeb": "1eabgqgi85o27tnr1faptr4ph7",
+				"AppClientID": "3hcd5eieb70ob2ugi0dd6n1mje",
+				"IdentityPoolId": "ap-southeast-2:f35586fb-bd38-4a59-b036-185be38d3ab7",
+				"IdentityPoolName": "cognitoa8a43d01_identitypool_a8a43d01",
+				"UserPoolName": "cognitoa8a43d01_userpool_a8a43d01"
+			},
+			"lastPushDirHash": "lxlr012jI7+amKeY14SJLLWg7I4="
+		}
+	}
+}

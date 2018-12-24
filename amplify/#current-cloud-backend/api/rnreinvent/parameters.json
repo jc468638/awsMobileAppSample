@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "rnreinvent",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoa8a43d01",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "schemaGraphql": "s3://step1-20181222211409-deployment/amplify-appsync-files/schema.graphql.1545523180338",
+    "ResolverBucket": "step1-20181222211409-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1545523180338"
+}
